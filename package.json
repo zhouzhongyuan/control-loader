@@ -1,14 +1,17 @@
 {
   "name": "control-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf lib/",
+    "build": "babel src/ --out-dir lib/",
     "test": "jest"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-jest": "^21.2.0",
     "babel-preset-env": "^1.6.1",
     "jest": "^21.2.1",
