@@ -1,6 +1,3 @@
-import { getOptions } from 'loader-utils';
-
-
 function generateControl(data) {
     const sourceData = JSON.parse(data);
     let outputStr = '';
@@ -17,7 +14,6 @@ function generateControl(data) {
 }
 
 export default function loader(source) {
-    const options = getOptions(this);
     const outputStr = generateControl(source)
     return outputStr;
 };
